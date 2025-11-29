@@ -71,7 +71,7 @@ try:
 
             st.altair_chart(pie_chart, use_container_width=True)
 
-            st.write("## Analyse inversée : par appareil (avec % globaux)")
+            st.write("## Analyse inversée : (avec % globaux)")
 
             expanded = df[target_col].str.split(";", expand=True)
             unique_devices = pd.unique(expanded.values.ravel())
